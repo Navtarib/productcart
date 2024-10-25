@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div class="navbar">
+        <div class="logo">NavMart</div>
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search">
+          <input class="searchBox" "text" placeholder="Search">
+          <button class="btn">Search</button>
+        </div>
+      </div>
+
+      <div class="herosection">
+        <div class="card">
+          <div class="image">
+            <img
+              src="assests/pexels-led-supermarket-179772-577514.jpg"
+              alt=""
+            />
+          </div>
+          <div class="description">
+            <div class="product">
+              <h1>LED Bulb</h1>
+            </div>
+            <div class="detail">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates quaerat facere repellendus.
+              </p>
+            </div>
+            <div class="addtocart">
+              <span>$20</span>
+              <button onclick="addToCart(20)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="assests/pexels-pixabay-280250.jpg" alt="" />
+          </div>
+          <div class="description">
+            <div class="product">
+              <h1>Watch</h1>
+            </div>
+            <div class="detail">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates quaerat facere repellendus.
+              </p>
+            </div>
+            <div class="addtocart">
+              <span>$15</span>
+              <button onclick="addToCart(15)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="assests/pre05.png" alt="" />
+          </div>
+          <div class="description">
+            <div class="product">
+              <h1>Shoes</h1>
+            </div>
+            <div class="detail">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates quaerat facere repellendus.
+              </p>
+            </div>
+            <div class="addtocart">
+              <span>$30</span>
+              <button onclick="addToCart(30)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <p>Total: $<span id="total-price">0</span></p>
+            <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+          </div>
+        </div>
+    
+      </div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
